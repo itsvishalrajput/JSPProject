@@ -12,7 +12,6 @@
 	String pwd = request.getParameter("pwd");
 	setConnection conn = new setConnection();
 	if(conn.Validation(uname, pwd)){
-		System.out.println("in the if ");
 %>
 	<h2>Welcome <%=uname %></h2>
 <% } 

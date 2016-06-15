@@ -15,7 +15,7 @@ public class setConnection {
 			Statement st = con.createStatement();
 			ResultSet rs = st.executeQuery("select * from jdbc_demo.details where username = '"+uname+"' and password = '"+pwd+"'");
 			if(rs.next()){
-				System.out.println("Welcome "+uname);
+				System.out.println("Login Validated!");
 				return true;
 			}
 		} catch (ClassNotFoundException e) {
