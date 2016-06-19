@@ -14,6 +14,13 @@
 	if(conn.Validation(uname, pwd)){
 %>
 	<h2>Welcome <%=uname %></h2>
+	<form method="get" action="GameSetter.jsp">
+	<input type="submit" value="Start Game">
+	</form>
+	
+	
+	
+	
 <% } 
 	else { %>
 	<h2>Invalid Username or Password!</h2>
